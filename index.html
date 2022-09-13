@@ -9,10 +9,34 @@
   <div id="main-content">
     <h1>Task Lister Lite™️</h1>
 
-    <form id="create-task-form" action="" method="POST">
+    <form id="create-task-form" action="#" method="POST">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <input id="creatForm" type="text" id="new-task-description" name="new-task-description" placeholder="description" required>
       <input type="submit" value="Create New Task">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Username" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="1" max="200">
+      </div>
+      <div>
+        <label for="date">Due date:</label>
+        <input type="date" name="date" id="date" min="2022-05-10">
+      </div>
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
     </form>
 
     <div id="list">
@@ -23,6 +47,4 @@
 
     <script src="./src/index.js"></script>
   </div>
-
 </body>
-</html>
